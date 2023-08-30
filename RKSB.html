@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha Bandhan Surprise From BHANUBEN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b3b5e;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            color: #FF5733;
+        }
+        p {
+            font-size: 18px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #fe3f14;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ef8112;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .container2{
+            max-width: 1000px;
+            margin: 10px;
+            margin-left:110px;
+            padding: 30px;
+            background-color: #9e5353;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>રક્ષાબંધન સરપ્રાઈઝ ભાનુબેન તરફ થી </h1>
+        <p>સરપ્રાઈઝ બટન પર ક્લિક કરો</p>
+        <div class="button-container">
+            <button class="button" id="surprise1">જયંતિ ભાઈ</button>
+            <button class="button" id="surprise2">હરેશ ભાઈ</button>
+            <button class="button" id="surprise3">JD ભાઈ</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <div class= "container2">
+        <h2>હેપી રક્ષાબંધન રાઠોડ પરિવાર તરફ થી</h2>
+    </div>
+
+    <script>
+        // Function to display a surprise message
+        function displaySurprise(surprise) {
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `Surprise: ${surprise}`;
+        }
+
+        // Event listeners for each button
+        document.getElementById('surprise1').addEventListener('click', () => {
+            displaySurprise('Surprise 1: હેપી રક્ષાબંધન જયંતિ ભાઈ !');
+        });
+
+        document.getElementById('surprise2').addEventListener('click', () => {
+            displaySurprise('Surprise 2: હેપી રક્ષાબંધન હરેશ ભાઈ!');
+        });
+
+        document.getElementById('surprise3').addEventListener('click', () => {
+            displaySurprise('Surprise 3: હેપી રક્ષાબંધન JD ભાઈ!');
+        });
+    </script>
+</body>
+</html>
